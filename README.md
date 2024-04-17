@@ -27,7 +27,7 @@ Improved data visibility: This can lead to better decision making as companies g
 
 Sample View of ITK Lite Admin Application
 
-![Reference Image](/tailspendmanagement/tailspend.jpg)
+![Reference Image](/tailspend.jpg)
 
 ## Database Requirement
 Use the main GIT branch if you are using PostgreSQL as your database in BTP. If the database is HANA DB, convert the database HDB and also update MTA.YAML to deploy Multi Target Applications with HANA Database.
