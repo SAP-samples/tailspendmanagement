@@ -1,0 +1,24 @@
+{
+    "xsappname": "AutoRFQApp",
+    "tenant-mode": "dedicated",
+    "description": "Sourcing Control Tower Security Settings",
+    "scopes": [
+      {
+        "name": "$XSAPPNAME.CategoryAdmin",
+        "description": "Manages Sourcing Tower Settings"
+      }
+    ],
+    "attributes": [],
+    "authorities":["$ACCEPT_GRANTED_AUTHORITIES"],
+    "role-templates": [
+      {
+        "name": "CategoryAdmin",
+        "description": "Category Administrator",
+        "scope-references": [
+          "$XSAPPNAME.CategoryAdmin"
+        ],
+        "attribute-references": []
+      }
+    ]
+  }
+  

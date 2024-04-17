@@ -1,0 +1,207 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.settings.LogServiceSettings"
+	xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:m="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:Page
+		showHeader="{device>/system/phone}"
+		showNavButton="{device>/system/phone}"
+		navButtonPress=".onNavButtonPress">
+		<m:landmarkInfo>
+			<m:PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="Log Service Maintenance"
+				contentRole="Main"
+				contentLabel="New Service Call to Maintain the asset in condition"/>
+		</m:landmarkInfo>
+		<ObjectPageLayout id="objectPageLayout">
+			<headerTitle>
+				<ObjectPageHeader
+					objectTitle="Log Service Maintenance"
+					objectSubtitle="New Service Call to Maintain the asset in condition">
+					<actions>
+						<ObjectPageHeaderActionButton
+							id="save"
+							text="{i18n>save}"
+							hideText="false"
+							press=".onSavePressed"
+							type="Emphasized"/>
+						<ObjectPageHeaderActionButton
+							id="cancel"
+							text="{i18n>cancel}"
+							press=".onCancelPressed"
+							hideText="false"/>
+					</actions>
+				</ObjectPageHeader>
+			</headerTitle>
+			<headerContent>
+													<m:Label
+			text="Service Number"/>
+				<m:Input
+												id="servicenumber"
+												type="Text"
+												editable="false"
+												width="10%"
+
+												value="{LogNumber>/currentNumber}"/>
+
+
+			</headerContent>
+			<sections>
+				<ObjectPageSection>
+				<subSections>
+					<ObjectPageSubSection
+						id="shopOwnerId"
+						title="General">
+						<blocks>
+							<ObjectPageLazyLoader
+								id="shopOwnerLazyLoader">
+								<f:SimpleForm
+									title="Log Service Data"
+									columnsL="2"
+									columnsM="2"
+									editable="true"
+									layout="ResponsiveGridLayout">
+									<f:content>
+									
+
+
+
+										<core:Title text="Asset Info"/>
+
+		
+											<m:Label
+												text="Asset Number"
+												/>
+						<m:ComboBox
+						    width="30%"
+							items="{
+								path: 'AssetNumber>/AssetNumberCollection',
+								sorter: { path: 'AssetNumber>text' }
+							}">
+							<core:Item key="{AssetNumber>key}" text="{AssetNumber>text}" />
+						</m:ComboBox>
+											<m:Label
+											
+												text="Supplier"/>
+											<m:Input
+												id="supplier"
+												type="Text"
+												width="30%"
+												value=""/>
+											<m:Label
+												
+												text="Request Raised By"/>
+												<m:Input
+												id="requestby"
+												type="Text"
+												width="30%"
+												value=""/>
+											
+											<m:Label text="Description of problem"/>
+											<m:TextArea id="textAreaWithBinding2" value="" showExceededText="true" maxLength="100" width="30%" />
+												
+													
+									</f:content>
+								</f:SimpleForm>
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+				</ObjectPageSection>
+
+				<!-- RESPONSE SECTION -->
+				<ObjectPageSection>
+					<subSections>
+						<ObjectPageSubSection
+							id="shopConfigurationId"
+							title="Feedback / Response ">
+							<blocks>
+								<ObjectPageLazyLoader
+									id="shopConfigurationLazyLoader">
+									<f:SimpleForm
+										title=""
+										columnsL="2"
+										columnsM="2"
+										editable="true"
+										layout="ResponsiveGridLayout" >
+										<f:content>
+											<core:Title text="Service Response Information" />
+												<m:Label
+													
+													text="Technician Information"/>
+												<m:Input
+													id="technician"
+													type="Text"
+													width="30%"
+													value=""/>
+												<m:Label text="Date &amp; Time" labelFor="DTP1"/>
+												<m:DateTimePicker
+													id="DTP1"
+													width="30%"
+													placeholder="Enter Date &amp; Time"
+													class="sapUiSmallMarginBottom" />
+										</f:content>
+									</f:SimpleForm>
+								</ObjectPageLazyLoader>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+<!--       Completion -->
+				<ObjectPageSection>
+					<subSections>
+						<ObjectPageSubSection
+							id="Completion"
+							title="Completion">
+							<blocks>
+								<ObjectPageLazyLoader
+									id="shopConfigurationLazyLoader1">
+									<f:SimpleForm
+										title="Service Request Completion"
+										columnsL="2"
+										columnsM="2"
+										editable="true"
+										layout="ResponsiveGridLayout" >
+										<f:content>
+											<core:Title text="" />
+										
+										<m:Label text="Completion Date" labelFor="CD1"/>
+										<m:DateTimePicker
+											id="CD1"
+											width="30%"
+											placeholder="Completion Date"
+											class="sapUiSmallMarginBottom" />
+
+
+										<m:Label text="Work Order No"/>
+										<m:Input
+											id="workorderno"
+											type="Text"
+											width="30%"
+											value=""/>
+
+										<m:Label text="Accepted By"/>
+										<m:Input
+											id="acceptedby"
+											type="Text"
+											width="30%"
+											value=""/>
+
+										</f:content>
+									</f:SimpleForm>
+								</ObjectPageLazyLoader>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+
+			</sections>
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

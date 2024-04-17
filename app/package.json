@@ -1,0 +1,19 @@
+{
+  "name": "AutoRFQApp",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "@sap/grunt-sapui5-bestpractice-build": "1.4.2",
+    "@sap/grunt-sapui5-bestpractice-test": "2.0.1"
+  },
+  "dependencies": {
+    "@sap/approuter": "^12.0.0"
+  },
+  "scripts": {
+    "start": "node node_modules/@sap/approuter/approuter.js",
+    "local:approuter": "cd app/ && npm start"
+  },
+  "engines": {
+    "node": "^18"
+  }
+}

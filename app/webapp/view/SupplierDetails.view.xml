@@ -1,0 +1,111 @@
+<mvc:View displayBlock="true" controllerName="com.sap.tailspend.controller.SupplierDetails" height="100%"
+		xmlns="sap.uxap"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:m="sap.m"
+		xmlns:f="sap.f"
+		xmlns:form="sap.ui.layout.form">
+
+	   <ObjectPageLayout id="ObjectPageLayout"
+					 showTitleInHeaderContent="true"
+					alwaysShowContentHeader="false"
+					preserveHeaderStateOnScroll="false"
+					headerContentPinnable="true"
+					isChildPage="true"
+					upperCaseAnchorBar="false">
+				<headerTitle>
+					<ObjectPageDynamicHeaderTitle>
+						<expandedHeading>
+							<m:Title text="Suppliers by selected Category" wrapping="true"/>
+						</expandedHeading>
+					</ObjectPageDynamicHeaderTitle>
+				</headerTitle>
+
+			 <headerContent>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+
+						<f:Avatar src="{products>ProductPicUrl}"
+								  showBorder ="false"
+								  displaySize ="XL"
+								  displayShape="Square"
+								  imageFitType="Contain"
+								  >
+						</f:Avatar>
+					</m:FlexBox>
+				<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+
+						<m:VBox justifyContent="Center" width="10em">
+							<m:Label text="Category ID"/>
+							<m:Text id="categoryid" text="{SupplierDetailView>/CategoryID}"/>
+						</m:VBox>
+						<m:VBox justifyContent="Center" width="10em">
+							<m:Label text="Region"/>
+							<m:Text id="region" text="{SupplierDetailView>/RegionID}"/>
+						</m:VBox>
+
+					</m:FlexBox>
+				</headerContent>
+
+		<sections>
+			<ObjectPageSection title="Supplier Details">
+				<subSections>
+					<ObjectPageSubSection>
+						<blocks>
+							<form:SimpleForm
+								maxContainerCols="2"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanL="12"
+								labelSpanM="12"
+								emptySpanL="0"
+								emptySpanM="0"
+								columnsL="1"
+								columnsM="1">
+								<form:content>
+								
+				<m:Table id="idSupplierTable" itemPress=".showSupplierDetail" items="{
+						path: 'SupplierDetailMo>/'
+						}">
+					<m:headerToolbar>
+						<m:OverflowToolbar>
+							<m:ToolbarSpacer/>
+							  <m:SearchField width="30%" search="onFilterCategory" selectOnFocus="false"/>
+						</m:OverflowToolbar>
+					</m:headerToolbar>
+
+						<m:columns>
+							<m:Column>
+								<m:Text text="SM Supplier ID" />
+							</m:Column>
+							<m:Column>
+								<m:Text text="ERP Supplier ID" />
+							</m:Column>
+							<m:Column>
+								<m:Text text="Supplier Name" />
+							</m:Column>
+							<m:Column>
+								<m:Text text="Supplier Country" />
+							</m:Column>
+						</m:columns>
+						<m:items>
+							<m:ColumnListItem type="Navigation">
+								<m:cells>
+									<m:ObjectAttribute text="{SupplierDetailMo>SLPSupplier/SMVendorId}" />
+									<m:ObjectAttribute text="{SupplierDetailMo>SLPSupplier/SupplierName}" />
+									<m:ObjectAttribute text="{SupplierDetailMo>SLPSupplier/AddressCountryCode}" />
+								</m:cells>
+							</m:ColumnListItem>
+						</m:items>
+					</m:Table>
+
+
+								</form:content>
+							</form:SimpleForm>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			
+		</sections> 
+	</ObjectPageLayout>
+
+</mvc:View>

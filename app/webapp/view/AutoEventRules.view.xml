@@ -1,0 +1,126 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.AutoEventRules"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<Page
+		showHeader="true"
+		enableScrolling="false"
+		class="sapUiContentPadding">
+		<customHeader>
+			<Bar>
+				<contentRight>
+					<Button id="save" text="Save" type="Emphasized" press="OnPressSave" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Tail Spend RFP - Event Rules"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+			<Label labelFor="G001" text="Select the Award Scenarios to apply for RFP Events" />
+			<RadioButtonGroup id="G001">
+				<RadioButton id="GR-1" text="Best Bid" />
+				<RadioButton id="GR-2" text="Best Bid with Limited Number of Suppliers" />
+				<RadioButton id="GR-3" text="Best Savings" />
+			</RadioButtonGroup>
+			<Label text="Bidding End Period (from Start time)" />
+			<Input id="G002"
+					value="{RulesModel>/BiddingPeriod}"
+					description="Day(s)"
+					width="250px"
+					fieldWidth="50%"
+					showClearIcon="true"
+					class="sapUiSmallMarginBottom" />
+
+			<Label text="Automatically invite preferred suppliers" />
+			<Switch id="102" state="{RulesModel>/InvitePreferredSupplier}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+			
+			<Label text="Would you like to Auto Publish the event" />
+			<Switch id="G003" state="{RulesModel>/AutoPublish}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Would you like to auto award the supplier Bid Response" />
+			<Switch id="G004" state="{RulesModel>/AutoAward}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Workflow Template for Guided Sourcing RFP Event" />
+			<Input id="G005"
+					value="{RulesModel>/WorkflowTemplate}"
+					width="200px"
+					showClearIcon="true"
+					class="sapUiSmallMarginBottom" />
+
+			<Label labelFor="G006" text="Auto Event Creation Approach" />
+			<RadioButtonGroup id="G006">
+				<RadioButton id="RB-1" text="One Event per Requisition" />
+				<RadioButton id="RB-2" text="Event per Category and Region" />
+			</RadioButtonGroup>
+
+			<Label text="Can participants place bids during preview period" />
+			<Switch id="19" state="{RulesModel>/PlaceBidsPreviewPeriod}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Require participant to give a reason for declining to bid" />
+			<Switch id="98" state="{RulesModel>/ReasontoDeclineBid}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Allow participants to submit bids by email" />
+			<Switch id="126" state="{RulesModel>/SubmitbyEmail}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Auto Event Creation" />
+			<Switch id="G007" state="{RulesModel>/AutoEventCreation}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			<Label text="Allow suppliers to add items" />
+			<Switch id="156" state="{RulesModel>/SupplierAddItems}">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
+
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+	</Page>
+</mvc:View>

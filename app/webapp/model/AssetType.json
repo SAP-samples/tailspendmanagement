@@ -1,0 +1,16 @@
+{
+	"AssetCollection": [
+		{
+			"key": "A1",
+			"text": "Fixed Asset"
+		},
+		{
+			"key": "A2",
+			"text": "Operating Asset"
+		},
+		{
+			"key": "A3",
+			"text": "Tangible Aset"
+		}
+	]
+}

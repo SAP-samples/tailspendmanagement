@@ -1,0 +1,81 @@
+<mvc:View
+	height="100%"
+	controllerName="com.sap.tailspend.controller.PlantShipMap"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+		xmlns:tnt="sap.tnt"
+		xmlns:m="sap.m"
+		xmlns="sap.ui.table"
+		>
+	<m:Page id="Page" showHeader="true"
+        navButtonPress="onNavBack">
+
+			<Table
+					id="plantshiptable"
+					rows="{TailSpendModel>/results}"
+					selectionMode="None"
+					visibleRowCount="7"
+					setEnableGrouping="true"
+					ariaLabelledBy="title">
+				<extension>
+					<m:OverflowToolbar>
+						<m:Title id="title" text="Plant to Ship-To Address Mapping"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column sortProperty="Plant" filterProperty=" Center">
+						<m:Label text="Plant ID"/>
+						<template>
+							<m:Text text="{TailSpendModel>PlantID}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column>
+						<m:Label text="Street"/>
+						<template>
+							<m:Text text="{TailSpendModel>Street}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column>
+						<m:Label text="City"/>
+						<template>
+							<m:Text text="{TailSpendModel>City}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column>
+						<m:Label text="PostalCode"/>
+						<template>
+							<m:Text text="{TailSpendModel>PostalCode}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column>
+						<m:Label text="Country"/>
+						<template>
+							<m:Text text="{TailSpendModel>Country}" wrapping="false"/>
+						</template>
+					</Column>
+				</columns>
+
+			</Table>
+
+		<m:UploadCollection
+			id="UploadCollection"
+			maximumFilenameLength="55"
+			maximumFileSize="10"
+			multiple="true"
+			sameFilenameAllowed="true"
+			instantUpload="false"
+			noDataDescription="Drop files or use the &quot;Add&quot; button to keep files ready for upload"
+			change="onChange"
+			fileDeleted="onFileDeleted"
+			filenameLengthExceed="onFilenameLengthExceed"
+			fileSizeExceed="onFileSizeExceed"
+			typeMissmatch="onTypeMissmatch"
+			uploadComplete="onUploadComplete"
+			beforeUploadStarts="onBeforeUploadStarts" />
+		<m:Button id="Button" text="Upload Now" press="onStartUpload" />
+		<m:MessageStrip
+		type="Warning"
+		text="Please load Plant to Ship To Address Mapping CSV File"
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTopBottom" />
+</m:Page>
+</mvc:View>

@@ -1,0 +1,134 @@
+## Generated mta.yaml based on template version 0.4.0
+## appName = AutoRFQApp
+## language=nodejs; multiTenant=false
+## approuter=
+_schema-version: '3.1'
+ID: AutoRFQApp
+version: 1.0.0
+description: "Sourcing Management Portal"
+parameters:
+  enable-parallel-deployments: true
+   
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install --production
+      - cds build --production
+      - bash pg-build.sh
+      - npx cds compile '*' > gen/pg/db/csn.json
+
+modules:
+# --------------------- FRONTEND MODULE ------------------------
+ - name: AutoRFQApp
+# --------------------------------------------------------------
+   type: html5
+   path: app/
+   parameters:
+     disk-quota: 1GB
+     memory: 1GB
+
+   build-parameters:
+     ignore: ["node_modules/"]  
+     builder: custom
+     commands:
+        - ui5 build
+   requires:
+    # Resources extracted from CAP configuration
+    - name: AutoRFQApp_xsuaa
+    - name: AutoRFQApp_destination
+    - name: AutoRFQApp_connectivity
+    - name: backend 
+      group: destinations
+      properties:
+        name: backend
+        url: ~{srv-url}
+        forwardAuthToken: true 
+
+ # --------------------- SERVER MODULE ------------------------
+ - name: AutoRFQApp-srv
+ # ------------------------------------------------------------
+   type: nodejs
+   path: gen/srv
+   properties:
+      EXIT: 1  # required by deploy.js task to terminate 
+      SAP_JWT_TRUST_ACL:
+      - clientid: "*"
+      identityzone: "*"
+   provides:
+    - name: backend      # required by consumers of CAP services (e.g. approuter)
+      properties:
+        srv-url: ${default-url}
+   requires:
+    # Resources extracted from CAP configuration
+    - name: AutoRFQApp-pgdatabase
+    - name: AutoRFQApp_xsuaa
+    - name: AutoRFQApp_destination
+    - name: AutoRFQApp_connectivity
+    - name: backend 
+      group: destinations
+      properties:
+        name: backend
+        url: ~{srv-url}
+        forwardAuthToken: true 
+ # --------------------- DB MODULE ------------------------
+ - name: AutoRFQApp-db
+ # ------------------------------------------------------------
+   type: custom
+   path: gen/pg
+   parameters:
+     disk-quota: 1GB
+     memory: 1GB
+     no-start: true
+     no-route: true
+     tasks:
+       - name: deploy-to-postgresql
+         command: npm start
+   build-parameters:
+     ignore: ["node_modules/"]
+   requires:
+     - name: AutoRFQApp-pgdatabase
+
+resources:
+ # services extracted from CAP configuration
+ # 'service-plan' can be configured via 'cds.requires.<name>.vcap.plan'
+# ------------------------------------------------------------
+ - name: AutoRFQApp-pgdatabase
+# ------------------------------------------------------------
+   parameters:
+     path: ./pg-options.json
+     service: postgresql-db
+     service-plan: standard
+     skip-service-updates:
+      parameters: true
+     service-tags:
+       - plain
+   type: org.cloudfoundry.managed-service
+
+# ------------------------------------------------------------
+ - name: AutoRFQApp_xsuaa
+# ------------------------------------------------------------
+   type: org.cloudfoundry.managed-service
+   parameters:
+     service: xsuaa
+     service-plan: application  
+     path: ./xs-security.json
+     config:
+       xsappname: AutoRFQApp-${space}
+       tenant-mode: dedicated
+
+# ------------------------------------------------------------
+ - name: AutoRFQApp_destination
+# ------------------------------------------------------------
+   type: org.cloudfoundry.managed-service
+   parameters:
+     service-plan: lite
+     service: destination
+
+# ------------------------------------------------------------
+ - name: AutoRFQApp_connectivity
+# ------------------------------------------------------------
+   type: org.cloudfoundry.managed-service
+   parameters:
+     service-plan: lite
+     service: connectivity

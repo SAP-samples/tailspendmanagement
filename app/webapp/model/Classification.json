@@ -1,0 +1,28 @@
+{
+	"ClassificationCollection": [
+		{
+			"key": "C1",
+			"text": "Office Equipments"
+		},
+		{
+			"key": "C2",
+			"text": "Buildings"
+		},
+		{
+			"key": "C3",
+			"text": "Software"
+		},
+		{
+			"key": "C4",
+			"text": "Furniture & Fixtures"
+		},
+		{
+			"key": "C5",
+			"text": "Computer Equipments"
+		},
+		{
+			"key": "C6",
+			"text": "Construction in Progress"
+		}
+	]
+}

@@ -1,0 +1,371 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.settings.MasterSettings"
+	xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:m="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:Page
+		showHeader="{device>/system/phone}"
+		showNavButton="{device>/system/phone}"
+		navButtonPress=".onNavButtonPress">
+		<m:landmarkInfo>
+			<m:PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>SystemSettings_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>SystemSettings_contentLabel}"/>
+		</m:landmarkInfo>
+		<ObjectPageLayout id="objectPageLayout">
+			<headerTitle>
+				<ObjectPageHeader
+					objectTitle="{i18n>systemSettingsTitle}"
+					objectSubtitle="{i18n>systemSettingsDescriptionTitle}">
+					<actions>
+						<ObjectPageHeaderActionButton
+							id="save"
+							text="{i18n>save}"
+							hideText="false"
+							press=".onSavePressed"
+							type="Emphasized"/>
+						<ObjectPageHeaderActionButton
+							id="cancel"
+							text="{i18n>cancel}"
+							press=".onCancelPressed"
+							hideText="false"/>
+					</actions>
+				</ObjectPageHeader>
+			</headerTitle>
+			<headerContent>
+				<m:MessageStrip
+					text="{
+						parts: [
+							'i18n>systemSettingsLastLoginTitle',
+							'view>/currentUser',
+							'view>/lastLogin'
+						],
+						formatter: '.formatter.formatMessage'
+					}"
+					type="Information"
+					showIcon="true">
+				</m:MessageStrip>
+			</headerContent>
+			<sections>
+				<ObjectPageSection>
+				<subSections>
+					<ObjectPageSubSection
+						id="shopOwnerId"
+						title="General">
+						<blocks>
+							<ObjectPageLazyLoader
+								id="shopOwnerLazyLoader">
+								<f:SimpleForm
+									title="{i18n>editOwnerDetailTitle}"
+									columnsL="2"
+									columnsM="2"
+									editable="true"
+									layout="ResponsiveGridLayout">
+									<f:content>
+										<core:Title text="Asset Info"/>
+											<m:Label
+												text="Asset Type"
+												/>
+												<m:ComboBox
+													items="{
+														path: 'assettype>/AssetCollection',
+														sorter: { path: 'assettype>text' }
+													}">
+													<core:Item key="{assettype>key}" text="{assettype>text}" />
+												</m:ComboBox>
+											<m:Label
+												labelFor="lastNameInput"
+												text="Description"/>
+											<m:Input
+												id="lastNameInput"
+												type="Text"
+												width="100%"
+												value=""/>
+											<m:Label
+												labelFor="addressStreetInput"
+												text="Classification"/>
+												<m:ComboBox
+													items="{
+														path: 'classification>/ClassificationCollection',
+														sorter: { path: 'classification>text' }
+													}">
+													<core:Item key="{classification>key}" text="{classification>text}" />
+												</m:ComboBox>
+											<m:Label
+												labelFor="addressTownInput"
+												text="Status"/>
+												<m:ComboBox
+													items="{
+														path: 'status>/StatusCollection',
+														sorter: { path: 'status>text' }
+													}">
+													<core:Item key="{status>key}" text="{status>text}" />
+												</m:ComboBox>
+											<m:Label
+												
+												text="Location"/>
+												<m:ComboBox
+													items="{
+														path: 'location>/LocationCollection',
+														sorter: { path: 'location>text' }
+													}">
+													<core:Item key="{location>key}" text="{location>text}" />
+												</m:ComboBox>
+											<m:Label
+												
+												text="Site"/>
+											<m:Input
+												id="site"
+												type="Tel"
+												width="100%"
+												value=""/>
+
+										<core:Title text="{i18n>ownerContact}" />
+											<m:Label
+												labelFor="phoneNumberInput"
+												text="{i18n>ownerMobile}"/>
+											<m:Input
+												id="phoneNumberInput"
+												type="Tel"
+												width="100%"
+												value="+1 123-456-7890"/>
+											<m:Label
+												labelFor="faxNumberInput"
+												text="{i18n>ownerFax}"/>
+											<m:Input
+												id="faxNumberInput"
+												type="Tel"
+												width="100%"
+												value="+1 404-123-1234"/>
+											<m:Label
+												labelFor="emailInput"
+												text="{i18n>mail}"/>
+											<m:Input
+												id="emailInput"
+												type="Email"
+												width="100%"
+												value="john.doe@sap.com"/>
+									</f:content>
+								</f:SimpleForm>
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+				</ObjectPageSection>
+
+				<!-- PURCHASE ORDER SECTION -->
+				<ObjectPageSection>
+					<subSections>
+						<ObjectPageSubSection
+							id="shopConfigurationId"
+							title="Purchase Order Value">
+							<blocks>
+								<ObjectPageLazyLoader
+									id="shopConfigurationLazyLoader">
+									<f:SimpleForm
+										title="Purchase Order Details"
+										columnsL="2"
+										columnsM="2"
+										editable="true"
+										layout="ResponsiveGridLayout" >
+										<f:content>
+											<core:Title text="Purchase Info" />
+												<m:Label
+													
+													text="PO Number"/>
+												<m:Input
+													id="ponumber"
+													type="Text"
+													width="100%"
+													value=""/>
+												<m:Label
+													
+													text="Supplier ID"/>
+												<m:Input
+													id="supplierid"
+													type="Text"
+													width="100%"
+													value=""/>
+												<m:Label
+													labelFor="storeCodeInput"
+													text="Company Code"/>
+												<m:Input
+													id="storeCodeInput"
+													type="Text"
+													width="100%"
+													value=""/>
+											<core:Title text="Accounting Detals" />
+												<m:Label
+													labelFor="storeWebsiteInput"
+													text="G/L Account"/>
+												<m:Input
+													id="storeWebsiteInput"
+													type="Text"
+													width="100%"
+													value=""/>
+												<m:Label
+													labelFor="storePhoneNumberInput"
+													text="Cost Center"/>
+												<m:Input
+													type="Tel"
+													id="storePhoneNumberInput"
+													width="100%"
+													value=""/>
+												<m:Label
+													labelFor=""
+													text="Purchase Cost"/>
+												<m:Input
+													type="Text"
+													id="purchasecost"
+													width="100%"
+													value=""/>
+												<m:Label
+													
+													text="Residual Value"/>
+												<m:Input
+													type="Text"
+													id="ResidualValue"
+													width="100%"
+													value=""/>
+												<m:Label
+													
+													text="Depreciation"/>
+												<m:Input
+													type="Text"
+													id="Depreciation"
+													width="100%"
+													value=""/>
+												<m:Label
+										
+													text="Depreciation % per Year"/>
+												<m:Input
+													type="Text"
+													id="DepreciationT"
+													width="100%"
+													value=""/>
+
+
+										</f:content>
+									</f:SimpleForm>
+								</ObjectPageLazyLoader>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+<!--       ASSET IMAGES -->
+				<ObjectPageSection>
+					<subSections>
+						<ObjectPageSubSection
+							id="Image"
+							title="Asset Images">
+							<blocks>
+								<ObjectPageLazyLoader
+									id="shopConfigurationLazyLoader1">
+									<f:SimpleForm
+										title="Load Asset Image"
+										columnsL="2"
+										columnsM="2"
+										editable="true"
+										layout="ResponsiveGridLayout" >
+										<f:content>
+											<core:Title text="Asset Image" />
+										<m:UploadCollection
+											id="UploadCollection"
+											maximumFilenameLength="55"
+											maximumFileSize="10"
+											multiple="true"
+											sameFilenameAllowed="true"
+											instantUpload="false"
+											noDataDescription="Drop files or use the &quot;Add&quot; button to keep files ready for upload"
+											change="onChange"
+											fileDeleted="onFileDeleted"
+											filenameLengthExceed="onFilenameLengthExceed"
+											fileSizeExceed="onFileSizeExceed"
+											typeMissmatch="onTypeMissmatch"
+											uploadComplete="onUploadComplete"
+											beforeUploadStarts="onBeforeUploadStarts" />
+										<m:Button id="Button" width= "40%" text="Upload Now" press="onStartUpload" />
+										</f:content>
+									</f:SimpleForm>
+								</ObjectPageLazyLoader>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+<!-- WARRANTY -->
+				<ObjectPageSection>
+					<subSections>
+						<ObjectPageSubSection
+							id="warranty"
+							title="Warranty">
+							<blocks>
+								<ObjectPageLazyLoader
+									id="shopConfigurationLazyLoader2">
+									<f:SimpleForm
+										title="Warranty Details"
+										columnsL="2"
+										columnsM="2"
+										editable="true"
+										layout="ResponsiveGridLayout" >
+										<f:content>
+											<core:Title text="General Info" />
+												<m:Label
+													labelFor="storeNameInput2"
+													text="Warranty Description"/>
+												<m:TextArea value="" maxLength="100" width="100%"/>
+												<m:Label
+													labelFor="storeDefaultLanguageInput"
+													text="Start Date"/>
+												<m:Input
+													id="storeDefaultLanguageInput2"
+													type="Text"
+													width="100%"
+													value=""/>
+												<m:Label
+													labelFor="storeCodeInput"
+													text="End Date"/>
+												<m:Input
+													id="storeCodeInput2"
+													type="Text"
+													width="100%"
+													value=""/>
+											<core:Title text="Issue Info" />
+												<m:Label
+													labelFor="storeWebsiteInput"
+													text="Issued By"/>
+												<m:Input
+													id="storeWebsiteInput2"
+													type="Text"
+													width="100%"
+													value=""/>
+												<m:Label
+													labelFor="storePhoneNumberInput2"
+													text="Cost Of Warranty"/>
+												<m:Input
+													type="Tel"
+													id="storePhoneNumberInput2"
+													width="100%"
+													value=""/>
+												
+										</f:content>
+									</f:SimpleForm>
+								</ObjectPageLazyLoader>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+
+
+
+			</sections>
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

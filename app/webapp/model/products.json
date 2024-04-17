@@ -1,0 +1,2209 @@
+{
+"doGetCategoriesData" :[
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4321",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "China",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "8214",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "811015",
+		"QualificationStatus": "Qualified",
+		"Region": "France",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "SEAsia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "40",
+		"QualificationStatus": "Qualified",
+		"Region": "Slovenia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "PRT",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "39",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "7313",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "China",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "SEAsia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43211501",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2513",
+		"QualificationStatus": "Qualified",
+		"Region": "France",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Saudi Arabia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "811017",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80141618",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "901118",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Netherlands",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Austria",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "China",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "12",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4618",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43232901",
+		"QualificationStatus": "Qualified",
+		"Region": "Canada",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4320",
+		"QualificationStatus": "Qualified",
+		"Region": "SWE",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 9,
+		"Category": "3127",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "3118",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "25101503",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81101700",
+		"QualificationStatus": "Qualified",
+		"Region": "Spain",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "AL",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2412",
+		"QualificationStatus": "Qualified",
+		"Region": "Switzerland",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "39",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 5,
+		"Category": "801415",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Austria",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "49",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81111809",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "64102000",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "5016",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "85122102",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2520",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "7613",
+		"QualificationStatus": "Qualified",
+		"Region": "FRA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Australia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8111",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "831216",
+		"QualificationStatus": "Qualified",
+		"Region": "Russia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "731516",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Distributed Energy",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "73141708",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8110",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "CO",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "78180100",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2612",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4321",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Sales",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "7611",
+		"QualificationStatus": "Qualified",
+		"Region": "FRA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8513",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "123522",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "AL",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "PRT",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "801415",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72102305",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "43211501",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80141612",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8210",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "90",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "901118",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "71",
+		"QualificationStatus": "Qualified",
+		"Region": "CZE",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "46181802",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 7,
+		"Category": "7611",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Belgium",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "8014",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "82111804",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "73101505",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "7313",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "901115",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 8,
+		"Category": "3127",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "45",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "821215",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81112201",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "7313",
+		"QualificationStatus": "Qualified",
+		"Region": "Canada",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "7315",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "721024",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "4320",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "CO",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "CA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72101506",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "901115",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "3214",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "50",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Sales",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "781015",
+		"QualificationStatus": "Qualified",
+		"Region": "FRA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Distributed Energy",
+		"QualificationStatus": "Qualified",
+		"Region": "PRT",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "821215",
+		"QualificationStatus": "Qualified",
+		"Region": "DE",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "78180100",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Netherlands",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2513",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Wells Subsurface and Exploration",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "81101700",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "78141501",
+		"QualificationStatus": "Qualified",
+		"Region": "ESP",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "AL",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "3116",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "77101910",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43231514",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81111506",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "90101603",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81101700",
+		"QualificationStatus": "Qualified",
+		"Region": "Turkey",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "4228",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "Austria",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80111602",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "801415",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "44",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72102305",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "721029",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "23",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 5,
+		"Category": "821215",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8310",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "CO",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "25101503",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Canada",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "24122003",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8010",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "26",
+		"QualificationStatus": "Qualified",
+		"Region": "PRT",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Finland",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "44",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8110",
+		"QualificationStatus": "Qualified",
+		"Region": "PRT",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8010",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "5010",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "78180100",
+		"QualificationStatus": "Qualified",
+		"Region": "United Arab Emirates",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "5016",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "39",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Wells Subsurface and Exploration",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Finland",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "3213",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "80",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8010",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "82111804",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "811015",
+		"QualificationStatus": "Qualified",
+		"Region": "South Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80141501",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "80101508",
+		"QualificationStatus": "Qualified",
+		"Region": "France",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "CA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 7,
+		"Category": "801415",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 5,
+		"Category": "All",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80141505",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "5310",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "861015",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4323",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "432316",
+		"QualificationStatus": "Qualified",
+		"Region": "FRA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4321",
+		"QualificationStatus": "Qualified",
+		"Region": "Saudi Arabia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80",
+		"QualificationStatus": "Qualified",
+		"Region": "Austria",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "APAC",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "8010",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Austria",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "56101504",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "56",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "7812",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "9011",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 5,
+		"Category": "801415",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "39",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "64102000",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "731516",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "85122201",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8211",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "5016",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 4,
+		"Category": "8010",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Finland",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43232304",
+		"QualificationStatus": "Qualified",
+		"Region": "Russia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43232901",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "13",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81111901",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "80101508",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "731521",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "73161507",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81101704",
+		"QualificationStatus": "Qualified",
+		"Region": "Finland",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Belgium",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Customer Operations",
+		"QualificationStatus": "Qualified",
+		"Region": "Italy",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "12",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8211",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80131502",
+		"QualificationStatus": "Qualified",
+		"Region": "Saudi Arabia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "47",
+		"QualificationStatus": "Qualified",
+		"Region": "CA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "Saudi Arabia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8513",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "23",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 6,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "All",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 5,
+		"Category": "731519",
+		"QualificationStatus": "Qualified",
+		"Region": "Portugal",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "4412",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "86",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Saudi Arabia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43211502",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8214",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "4320",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "501317",
+		"QualificationStatus": "Qualified",
+		"Region": "UK",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "73161606",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "Australia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "72",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "73161606",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "30",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "Distributed Energy",
+		"QualificationStatus": "Qualified",
+		"Region": "Canada",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43211501",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "4320",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "8114",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Africa",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "2412",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "81101700",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "432326",
+		"QualificationStatus": "Qualified",
+		"Region": "ESP",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 6,
+		"Category": "801016",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "81101700",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "8014",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "2412",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "32",
+		"QualificationStatus": "Qualified",
+		"Region": "USA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "53",
+		"QualificationStatus": "Qualified",
+		"Region": "SEAsia",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "All",
+		"QualificationStatus": "Qualified",
+		"Region": "Germany",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "80141606",
+		"QualificationStatus": "Qualified",
+		"Region": "SVN",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Netherlands",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "7213",
+		"QualificationStatus": "Qualified",
+		"Region": "All",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 1,
+		"Category": "22",
+		"QualificationStatus": "Qualified",
+		"Region": "Belgium",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "43",
+		"QualificationStatus": "Qualified",
+		"Region": "EU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "8014",
+		"QualificationStatus": "Qualified",
+		"Region": "EMEA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "81112201",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 2,
+		"Category": "78101804",
+		"QualificationStatus": "Qualified",
+		"Region": "DEU",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	},
+	{
+		"count@odata.type": "#Decimal",
+		"count": 3,
+		"Category": "80101508",
+		"QualificationStatus": "Qualified",
+		"Region": "FRA",
+		"SLPSupplier_Realm": "StratusMedio",
+		"@odata.id": null
+	}
+]
+}

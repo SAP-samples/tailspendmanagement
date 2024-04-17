@@ -1,0 +1,114 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.settings.FileImport"
+	xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:m="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:Page
+		showHeader="{device>/system/phone}"
+		showNavButton="{device>/system/phone}"
+		navButtonPress=".onNavButtonPress">
+		<m:landmarkInfo>
+			<m:PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>SystemSettings_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>SystemSettings_contentLabel}"/>
+		</m:landmarkInfo>
+		<ObjectPageLayout id="objectPageLayout">
+			<headerTitle>
+				<ObjectPageHeader
+					objectTitle="Upload New Asset Records"
+					objectSubtitle="Use Excel to upload Assets into Asset Management">
+					<actions>
+
+					</actions>
+				</ObjectPageHeader>
+			</headerTitle>
+			<headerContent>
+			</headerContent>
+			<sections>
+
+				<ObjectPageSection>
+				<subSections>
+					<ObjectPageSubSection
+						id="shopOwnerId"
+						title="File Upload of Asset Master Record">
+						<blocks>
+							<ObjectPageLazyLoader
+								id="shopOwnerLazyLoader">
+
+									<f:SimpleForm
+									id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title=""
+			labelSpanXL="1"
+			labelSpanL="1"
+			labelSpanM="1"
+			labelSpanS="1"
+			adjustLabelSpan="false"
+			emptySpanXL="1"
+			emptySpanL="1"
+			emptySpanM="1"
+			emptySpanS="1"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+									<f:content>
+
+								<m:UploadCollection
+			id="UploadCollection"
+			maximumFilenameLength="55"
+			maximumFileSize="10"
+			multiple="true"
+			sameFilenameAllowed="true"
+			instantUpload="false"
+			noDataDescription="Drop files or use the &quot;Add&quot; button to keep files ready for upload"
+			change="onChange"
+			fileDeleted="onFileDeleted"
+			filenameLengthExceed="onFilenameLengthExceed"
+			fileSizeExceed="onFileSizeExceed"
+			typeMissmatch="onTypeMissmatch"
+			uploadComplete="onUploadComplete"
+			beforeUploadStarts="onBeforeUploadStarts" />
+
+									</f:content>
+								</f:SimpleForm>
+
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+
+
+	<ObjectPageSubSection
+						>
+							
+						<blocks>
+						<ObjectPageLazyLoader>
+							<m:Button id="Button" text="Import Asset" press="onStartUpload" />
+		<!-- <m:MessageStrip
+		type="Warning"
+		text="Note: Please load Asset Master with appropriate records listed on the template "
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTopBottom" /> -->
+		</ObjectPageLazyLoader>
+			</blocks>
+
+							
+			
+					</ObjectPageSubSection>
+
+
+
+
+
+				</ObjectPageSection>
+
+			</sections>
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

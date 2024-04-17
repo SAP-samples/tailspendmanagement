@@ -1,0 +1,76 @@
+{
+  "name": "AutoRFQApp",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1.1.0",
+    "@sap-cloud-sdk/core": "^1.54.2",
+    "@sap/approuter": "^12.0.0",
+    "@sap/audit-logging": "^3.2.0",
+    "@sap/cds": "7.1.2",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.19",
+    "@sap/xssec": "^3.2.18",
+    "passport": "0.6.0",
+    "@ui5/cli": "^2.10.0",
+    "concurrently": "^5.3.0",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "7.1.1"
+  },
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "local:dev": "concurrently --kill-others \"npm run local:cds:watch\" \"npm run local:approuter\"",
+    "local:debug": "concurrently --kill-others \"npm run local:cds:run\" \"npm run local:approuter\"",
+    "local:cds:watch": "node node_modules/@sap/cds/bin/cds watch",
+    "local:cds:run": "node --inspect node_modules/@sap/cds/bin/cds-serve",
+    "local:approuter": "cd app/ && npm start",
+    "ui5-start": "ui5 serve --port 8080",
+    "build": "ui5 build -a --clean-dest",
+    "build-self-contained": "ui5 build self-contained -a --clean-dest",
+    "serve-dist": "ws --compress -d dist",
+    "mta:package": "mbt build --mtar AutoRFQApp_0.0.1.mtar --platform cf",
+    "mta:deploy": "cf deploy mta_archives/AutoRFQApp_0.0.1.mtar -f",
+    "local:pg": "cds watch --profile pg",
+    "local:db:build": "cds deploy --profile pg"
+  },
+  "cds": {
+    "odata": {
+      "version": "v4"
+    },
+    "features": {
+      "cds_tx_inheritance": false,
+      "cds_tx_protection": false
+    },
+    "auth": {
+      "passport": {
+        "strategy": "JWT"
+      }
+    },
+    "requires": {
+      "auth": {
+        "kind": "xsuaa"
+              },
+        "db": {
+        "kind": "postgres"
+            },
+      "[development]" : {
+        "kind":"postgres",
+        "impl": "@cap-js/postgres",
+        "credentials": {
+          "host": "localhost",
+          "port": 5432,
+          "database": "autosourcingdb",
+          "user": "postgres",
+          "password": "postgres"
+        }
+      }
+    }
+  }
+}

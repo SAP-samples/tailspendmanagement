@@ -1,0 +1,61 @@
+{
+	"pages": [
+		{
+			"pageId": "assetPageId",
+			"header": "Asset Data",
+			"icon": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1036.jpg",
+			"displayShape": "Square",
+			"title": "Notebook Basic 15",
+			"description": "Notebook Basic 15 with 2,80 GHz quad core, 15 LCD 4 GB DDR3 RAM 500 GB Hard Disc Windows 8 Pro",
+			"groups": [
+				{
+					"heading": "Asset Details",
+					"elements": [
+						{
+							"label": "Asset Number",
+							"value": "A191911"
+						
+						},
+						{
+							"label": "Location",
+							"value": "Plano"
+						
+						},
+						{
+							"label": "Asset Type",
+							"value": "IT Equipment"
+						
+						}
+					]
+				},
+				{
+					"heading": "PO Details",
+					"elements": [
+						{
+							"label": "PO Number",
+							"value": "PO7954",
+							"url": "http://sap.com",
+							"elementType": "link"
+						},
+						{
+							"label": "Cost Center",
+							"value": "187616"
+						},
+                        {
+							"label": "G/L Account",
+							"value": "121211"
+						},
+                        {
+							"label": "Receipt Date",
+							"value": "04/02/2022"
+						},
+						{
+							"label": "Receipt Number",
+							"value": "RCP1988"
+						}
+					]
+				}
+			]
+		}
+	]
+}

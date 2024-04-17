@@ -1,0 +1,9 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<BusyDialog
+		title="Loading Data"
+		text="Printing Labels for PO Quantity. Please check Label Printer"
+		showCancelButton="true"
+		close="onDialogClosed" />
+</core:FragmentDefinition>

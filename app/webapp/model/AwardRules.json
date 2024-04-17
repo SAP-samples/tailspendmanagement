@@ -1,0 +1,16 @@
+{
+	"AwardRules": [
+		{
+			"AwardScenario": "Best Bid",
+			"AwardScenarioDesc": "Allocates 100% of each item to the best participant bid based on the extended price. For reverse auctions and standard RFx events, the best bid is the bid with the lowest extended price. For forward auctions and events, the best bid is the bid with the highest extended price. This scenario does not evaluate bids for any supplier-added items."			
+		},
+		{
+			"AwardScenario": "Best Bid with Limited Number of Suppliers",
+			"AwardScenarioDesc": "Allocates 100% of each item to the supplier bid that results in the lowest summed-up extended price without exceeding the number of suppliers specified for the scenario. This scenario does not evaluate bids for any supplier-added items."			
+		},
+		{
+			"AwardScenario": "Best Savings",
+			"AwardScenarioDesc": "Allocates 100% of each item to the participant bid with the maximum difference between the historical price and the bid price. This scenario does not evaluate bids for any supplier-added items."			
+		}
+	]
+}

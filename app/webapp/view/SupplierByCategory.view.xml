@@ -1,0 +1,60 @@
+<mvc:View displayBlock="true" controllerName="com.sap.tailspend.controller.SupplierByCategory" height="100%"
+	  xmlns="sap.m"
+	  xmlns:u="sap.uxap"
+	  xmlns:f="sap.f"
+	  xmlns:layout="sap.ui.layout"
+	  xmlns:mvc="sap.ui.core.mvc">
+
+	<f:FlexibleColumnLayout layout="{CategoryView>/layout}">
+		
+		<f:beginColumnPages>
+					<Page title="Category by Region">
+					<content>
+					
+					<Table id="idCategoryTable" growing="true" growingScrollToLoad="true" growingThreshold="50" itemPress=".showDetail" items="{
+						path: 'CategoryAgg>/',
+						sorter: {
+							path: 'Region',
+							group: true
+						}
+						}">
+					<headerToolbar>
+						<OverflowToolbar>
+							<ToolbarSpacer/>
+							  <SearchField width="30%" placeholder="Provide Region ID to Restrict data by Region" search="onFilterCategory" selectOnFocus="false"/>
+						</OverflowToolbar>
+					</headerToolbar>
+
+						<columns>
+							<Column>
+								<Text text="Category ID" />
+							</Column>
+							<Column>
+								<Text text="Category Description" />
+							</Column>
+
+						</columns>
+						<items>
+							<ColumnListItem type="Navigation">
+								<cells>
+									<ObjectAttribute text="{CategoryAgg>Category}" />
+									<ObjectAttribute text="{CategoryAgg>Name}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</f:beginColumnPages>
+
+		 <f:midColumnPages>
+			<mvc:XMLView id="SupplierDetails" viewName="com.sap.tailspend.view.SupplierDetails" />
+		</f:midColumnPages>
+
+		 <f:endColumnPages>
+			<mvc:XMLView id="SupplierDetailDetail" viewName="com.sap.tailspend.view.SupplierDetailDetail" />
+		</f:endColumnPages>
+
+    </f:FlexibleColumnLayout>
+
+</mvc:View>

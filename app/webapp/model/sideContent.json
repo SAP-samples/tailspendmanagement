@@ -1,0 +1,111 @@
+{
+	"selectedKey": "",
+
+	"navigation": [
+		{
+			"titleI18nKey": "Home",
+			"icon": "sap-icon://home",
+			"expanded": true,
+			"key": "",
+			"items": []
+		},
+		{
+			"titleI18nKey": "Sourcing Management",
+			"icon": "sap-icon://monitor-payments",
+			"expanded": true,
+			"key": "SourcingManagement",
+			"items": [
+				{
+					"titleI18nKey": "Supplier By Category",
+					"key": "SupplierByCategory"
+				},
+				{
+					"titleI18nKey": "Auto Event Rules",
+					"key": "AutoEventRules"
+				},
+				{
+					"titleI18nKey": "ERP Demand List",
+					"key": "ERPDemand"
+				},
+				{
+					"titleI18nKey": "Sourcing Cockpit",
+					"key": "SourcingCockpit"
+				}
+			]
+		},
+		{
+			"titleI18nKey": "Configuration Upload",
+			"icon": "sap-icon://monitor-payments",
+			"expanded": true,
+			"key": "SourcingManagement",
+			"items": [
+				{
+					"titleI18nKey": "Mat. Group to Commodity Map",
+					"key": "MaterialGrouptoCommodityMap"
+				}
+				,
+				{
+					"titleI18nKey": "TailSpend Supplier Map",
+					"key": "TailSpendSupplierMap"
+				},
+				{
+					"titleI18nKey": "Plant & Ship-To Address Map",
+					"key": "PlantShipMap"
+				}
+			]
+		},
+		{
+			"titleI18nKey": "Reporting",
+			"icon": "sap-icon://line-chart",
+			"expanded": true,
+			"key": "statistics",
+			"items": []
+		},
+		{
+			"titleI18nKey": "Ariba Optimizer Settings",
+			"icon": "sap-icon://customize",
+			"expanded": true,
+			"key": "Optimizer",
+			"items": []
+		}
+	],
+	"fixedNavigation": [
+		{
+			"titleI18nKey": "sideContentImportantLinks",
+			"icon": "sap-icon://chain-link",
+			"key": "importantLinks"
+		},
+		{
+			"titleI18nKey": "sideContentLegal",
+			"icon": "sap-icon://compare",
+			"key": "legal"
+		}
+	],
+	"masterSettings": [
+		{
+			"titleI18nKey": "sideContentSystemSettings",
+			"key": "systemSettings",
+			"selected": true
+		},
+		{
+			"titleI18nKey": "Import Assets",
+			"key": "fileSettings",
+			"selected": false
+		},
+		{
+			"titleI18nKey": "Export Assets",
+			"key": "fileExportSettings",
+			"selected": false
+		},
+		{
+			"titleI18nKey": "Log Service Maintenance",
+			"key": "LogServiceSettings",
+			"selected": false
+		},
+		{
+			"titleI18nKey": "sideContentCampaignSettings",
+			"key": "shippingSettings",
+			"selected": false
+		}
+	]
+}

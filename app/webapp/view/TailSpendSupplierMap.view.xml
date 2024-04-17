@@ -1,0 +1,33 @@
+<mvc:View
+	height="100%"
+	controllerName="com.sap.tailspend.controller.TailSpendSupplierMap"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+		xmlns:tnt="sap.tnt"
+	xmlns="sap.m">
+	<Page id="Page" showHeader="true"
+		showNavButton="true"
+        navButtonPress="onNavBack">
+
+		<UploadCollection
+			id="UploadCollection"
+			maximumFilenameLength="55"
+			maximumFileSize="10"
+			multiple="true"
+			sameFilenameAllowed="true"
+			instantUpload="false"
+			noDataDescription="Drop files or use the &quot;Add&quot; button to keep files ready for upload"
+			change="onChange"
+			fileDeleted="onFileDeleted"
+			filenameLengthExceed="onFilenameLengthExceed"
+			fileSizeExceed="onFileSizeExceed"
+			typeMissmatch="onTypeMissmatch"
+			uploadComplete="onUploadComplete"
+			beforeUploadStarts="onBeforeUploadStarts" />
+		<Button id="Button" text="Upload Now" press="onStartUpload" />
+		<MessageStrip
+		type="Warning"
+		text="Please load your Preferred Tail Spend Suppliers file by Region and Category"
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTopBottom" />
+</Page>
+</mvc:View>

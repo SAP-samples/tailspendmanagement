@@ -1,0 +1,15 @@
+{
+	"timeMeasure": "h",
+	"Suppliers": [
+		{
+			"id": "Sourcing Review",
+			"deliveryTime": 2,
+			"deliveryTimeSemantics": "Good"
+		},
+		{
+			"id": "Auto Sourced and Awarded",
+			"deliveryTime": 8,
+			"deliveryTimeSemantics": "Good"
+		}
+	]
+}

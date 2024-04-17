@@ -1,0 +1,156 @@
+<mvc:View displayBlock="true" controllerName="com.sap.tailspend.controller.SourcingCockpit"
+        xmlns="sap.ui.table"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:unified="sap.ui.unified"
+		xmlns:core="sap.ui.core"
+		xmlns:commons="sap.ui.commons"
+		xmlns:tnt="sap.tnt"
+		xmlns:form="sap.ui.layout.form"
+		xmlns:m="sap.m"
+		height="100%">
+
+	<m:Page
+			showHeader="false"
+			enableScrolling="false"
+			class="sapUiContentPadding">
+		
+			<Table
+					id="eventstable"
+					rows="{RFPModel>/results}"
+					rowActionCount="1"
+					visibleRowCount="10"
+					selectionMode="Single">
+				<extension>
+					<m:OverflowToolbar>
+						<m:Title id="title" text="Sourcing Cockpit"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column width="150px">
+						<m:Label text="Document ID"/>
+						<template>
+							<m:Text text="{RFPModel>DOCID}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="200px">
+						<m:Label text="RFP Title"/>
+						<template>
+							<m:Text text="{RFPModel>Title}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="400px">
+						<m:Label text="Ariba Sourcing URL"/>
+						<template>
+						   <m:Link text="Ariba GB Sourcing URL" href="{RFPModel>webJumperURL}" target="_blank" />
+						</template>
+					</Column>
+					<Column width="250px">
+						<m:Label text="Created Date"/>
+						<template>
+							<m:Text text="{RFPModel>createDate}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="350px">
+						<m:Label text="Status"/>
+						<template>
+							<tnt:InfoLabel id="il9" text="{RFPModel>Status}" colorScheme="9"/>
+						</template>
+					</Column>
+					
+				</columns>
+
+				<rowActionTemplate>
+					<RowAction>
+					<items>
+						<RowActionItem type="Navigation" press="onDetailsPress" icon="sap-icon://feeder-arrow"></RowActionItem>
+					</items>
+					</RowAction>
+				</rowActionTemplate>
+
+			</Table>
+
+		<m:VBox class="sapUiSmallMargin">
+
+		<m:Panel id="rfpitemform" visible="false">
+		<m:headerToolbar>
+		<m:OverflowToolbar active="true" press="onOverflowToolbarPress">
+			<m:ToolbarSpacer />
+			<m:Button icon="sap-icon://decline" press="onClose" />
+		</m:OverflowToolbar>
+		</m:headerToolbar>
+		
+
+			<Table
+					id="rfpitem"
+					rows="{RFPItemModel>/results}"
+					visibleRowCount="4"
+					selectionMode="None"
+					>
+				<columns>
+					<Column width="150px">
+						<m:Label text="Item ID"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRItemID}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="200px">
+						<m:Label text="Item Description"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRItemTitle}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="PR Unit Price"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRPrice}" wrapping="false"/>
+						</template>
+					</Column>
+				
+					<Column width="60px">
+						<m:Label text="Currency"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRCurrency}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="PR Quantity"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRQuantity}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="60px">
+						<m:Label text="Unit Of Measure"/>
+						<template>
+							<m:Text text="{RFPItemModel>PRUOM}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="Awarded Quantity"/>
+						<template>
+							<m:Text text="{RFPItemModel>AwardedQuantity}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="Awarded Unit Price"/>
+						<template>
+							<m:Text text="{RFPItemModel>AwardedPrice}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="200px">
+						<m:Label text="Awarded Supplier"/>
+						<template>
+							<m:Text text="{RFPItemModel>AwardedSupplierName}" wrapping="false"/>
+						</template>
+					</Column>
+
+				</columns>
+			</Table>		
+				
+			</m:Panel>
+			
+
+	</m:VBox>
+
+	</m:Page>
+
+</mvc:View>

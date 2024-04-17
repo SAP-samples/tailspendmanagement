@@ -1,0 +1,20 @@
+{
+	"StatusCollection": [
+		{
+			"key": "S1",
+			"text": "New"
+		},
+		{
+			"key": "S2",
+			"text": "In Use"
+		},
+		{
+			"key": "S3",
+			"text": "Disposed"
+		},
+		{
+			"key": "S4",
+			"text": "In Maintenance"
+		}
+	]
+}

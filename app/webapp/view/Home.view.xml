@@ -1,0 +1,197 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.Home"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table"
+	xmlns:microchart="sap.suite.ui.microchart"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page showHeader="false">
+		<landmarkInfo>
+			<PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>Home_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>Home_contentLabel}"/>
+		</landmarkInfo>
+		<Image
+				src="{
+					parts: [{path:'i18n>homeImage'}, {path:'i18n>homeImage'}],
+					formatter: '.formatter.srcImageValue'
+					
+				}"
+				width="100%"
+						height="20%"
+			/>
+
+			<layout:VerticalLayout class="sapUiResponsiveMargin">
+			<Title
+				titleStyle="H2"
+				text="Sourcing Quick Controls"
+				class="sapUiTinyMarginBegin" />
+			<layout:HorizontalLayout allowWrapping="true">
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="Tail Spend Sourcing"
+					subheader="Analytics"
+					press="onNavToProcessFlow">
+					<tileContent>
+						<TileContent>
+							<content>
+								<ImageContent src="sap-icon://business-objects-experience" />
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="SAP Ariba Guided Sourcing"
+					press="onNavToAriba">
+					<tileContent>
+						<TileContent>
+							<content>
+							<ImageContent src="sap-icon://my-sales-order" />
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="ERP Connected Backend"
+					subheader="SAP"
+					press="onNavToERP">
+					<tileContent>
+						<TileContent>
+							<content>
+								<ImageContent src="sap-icon://sap-logo-shape" />
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				<SlideTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					tiles="{news>/News}">
+					<GenericTile
+						backgroundImage="{news>image}"
+						state="{news>state}"
+						id= "tile"
+						frameType="TwoByOne"
+						press="onNavToNews">
+						<tileContent>
+							<TileContent
+								footer="{
+									path: 'news>date',
+									formatter: '.formatJSONDate'
+								}">
+								<content>
+									<NewsContent
+										contentText="{news>content}"
+										subheader="{news>subheader}">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</SlideTile>
+			</layout:HorizontalLayout>
+			<Title
+				titleStyle="H2"
+				text="Preferred Suppliers"
+				class="sapUiTinyMarginBegin sapUiMediumMarginTop" />
+			<layout:HorizontalLayout allowWrapping="true">
+			<t:Table
+				id="assettable"
+				selectionMode="Single"
+				rows="{supplier>/SupplierCollection}"
+				rowActionCount="1"
+				visibleRowCount="10"
+				enableCellFilter="false"
+				width="90%"
+				>
+
+				<t:extension>
+
+				</t:extension>
+
+				<t:columns>
+					<t:Column
+						width="15rem"
+						filterProperty="Name">
+						<Label text="Supplier Name" />
+						<t:template>
+							<Text text="{supplier>CompanyName}" wrapping="false" />
+						</t:template>
+					</t:Column>
+					<t:Column
+						width="15rem"
+						filterProperty="ContactName"
+						defaultFilterOperator="StartsWith">
+						<Label text="CompanyName" />
+						<t:template>
+							<Text text="{supplier>CompanyName}" wrapping="false" />
+						</t:template>
+					</t:Column>
+					<t:Column
+						id="QualifiedSupplier"
+						width="9rem"
+						filterProperty="Status"
+						showFilterMenuEntry="false"
+						defaultFilterOperator="EQ"
+						filterType="sap.ui.model.type.Boolean">
+						<Label text="Qualified Status" />
+						<t:template>
+										<ObjectNumber
+											number="{supplier>Status}"
+											state="{supplier>state}"/>
+						</t:template>
+					</t:Column>
+					<t:Column
+						width="20rem"
+						filterProperty="Address"
+						defaultFilterOperator="StartsWith">
+						<Label text="Street Address" />
+						<t:template>
+							<Text text="{supplier>Address}" wrapping="true" />
+						</t:template>
+					</t:Column>
+				
+									<t:Column
+						width="11rem"
+						filterProperty="City"
+						defaultFilterOperator="StartsWith">
+						<Label text="City" />
+						<t:template>
+							<Text text="{supplier>City}" wrapping="false" />
+						</t:template>
+					</t:Column>
+
+				
+					<t:Column
+						width="10rem"
+						filterProperty="Region"
+						defaultFilterOperator="StartsWith">
+						<Label text="Region" />
+						<t:template>
+							<Text text="{supplier>Region}" wrapping="true" />
+						</t:template>
+					</t:Column>
+
+					<t:Column
+						width="10rem"
+						filterProperty="Country"
+						defaultFilterOperator="StartsWith">
+						<Label text="Country" />
+						<t:template>
+							<Text text="{supplier>Country}" wrapping="true" />
+						</t:template>
+					</t:Column>
+
+			</t:columns>
+
+			</t:Table>	
+
+			</layout:HorizontalLayout>
+		</layout:VerticalLayout>
+	</Page>
+</mvc:View>

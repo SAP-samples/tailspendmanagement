@@ -1,0 +1,50 @@
+{
+	"nodes": [
+		{
+			"id": "1",
+			"lane": "0",
+			"title": "PR received from ERP",
+			"titleAbbreviation": "",
+			"children": null,
+			"state": "Positive",
+			"stateText": "Sourcing Review - OK",
+			"focused": false,
+			"texts": [
+				"Sourcing Control Tower Review Complete",
+				"Event Rules Applied"
+			]
+		}
+	],
+	"lanes": [
+		{
+			"id": "0",
+			"icon": "sap-icon://order-status",
+			"label": "Sourcing Operations – Review",
+			"position": 0
+		},
+		{
+			"id": "1",
+			"icon": "sap-icon://customer-order-entry",
+			"label": "Event Published",
+			"position": 1
+		},
+		{
+			"id": "2",
+			"icon": "sap-icon://competitor",
+			"label": "Event Awarded",
+			"position": 2
+		},
+		{
+			"id": "3",
+			"icon": "sap-icon://people-connected",
+			"label": "Award Updated in Control Tower",
+			"position": 3
+		},
+		{
+			"id": "4",
+			"icon": "sap-icon://sales-order-item",
+			"label": "PR Updated in the Source System",
+			"position": 4
+		}
+	]
+}

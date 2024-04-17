@@ -1,0 +1,165 @@
+<mvc:View
+	controllerName="com.sap.tailspend.controller.settings.FileExport"
+	xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:m="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:Page
+		showHeader="{device>/system/phone}"
+		showNavButton="{device>/system/phone}"
+		navButtonPress=".onNavButtonPress">
+		<m:landmarkInfo>
+			<m:PageAccessibleLandmarkInfo
+				rootRole="Region"
+				rootLabel="{i18n>SystemSettings_rootLabel}"
+				contentRole="Main"
+				contentLabel="{i18n>SystemSettings_contentLabel}"/>
+		</m:landmarkInfo>
+		<ObjectPageLayout id="objectPageLayout">
+			<headerTitle>
+				<ObjectPageHeader
+					objectTitle="Export Asset Records"
+					objectSubtitle="Export asset records to Excel Document to local desktop">
+					<actions>
+
+					</actions>
+				</ObjectPageHeader>
+			</headerTitle>
+			<headerContent>
+			</headerContent>
+			<sections>
+
+				<ObjectPageSection>
+				<subSections>
+					<ObjectPageSubSection
+						id="shopOwnerId"
+						title="File Upload of Asset Master Record">
+						<blocks>
+							<ObjectPageLazyLoader
+								id="shopOwnerLazyLoader">
+
+								<t:Table
+				id="assetexporttable"
+				selectionMode="MultiToggle"
+				rows="{products>/ProductCollection}"
+				rowActionCount="1"
+				visibleRowCount="7"
+				enableCellFilter="{ui>/cellFilterOn}"
+				width="auto"
+				>
+
+				<t:extension>
+
+						<m:OverflowToolbar class="sapUiMediumMarginTop">
+							<m:Button text="Export Asset Details" type="Accept" press="onDetailsPress"/>
+							<m:ToolbarSpacer/>
+							
+						</m:OverflowToolbar>
+
+				</t:extension>
+
+				<t:columns>
+					<t:Column
+						width="15rem"
+						filterProperty="Name">
+						<m:Label text="Product Name" />
+						<t:template>
+							<m:Text text="{products>Name}" wrapping="false" />
+						</t:template>
+					</t:Column>
+					<t:Column
+						width="15rem"
+						filterProperty="Category"
+						defaultFilterOperator="StartsWith">
+						<m:Label text="Category" />
+						<t:template>
+							<m:Text text="{products>Category}" wrapping="false" />
+						</t:template>
+					</t:Column>
+					<t:Column width="15rem">
+						<m:Label text="Image" />
+						<t:template>
+							 <m:Image src="{products>ProductPicUrl}" width="3em"/>
+						</t:template>
+					</t:Column>
+					<t:Column
+						id="availability"
+						width="9rem"
+						filterProperty="Available"
+						showFilterMenuEntry="false"
+						defaultFilterOperator="EQ"
+						filterType="sap.ui.model.type.Boolean">
+						<m:Label text="Status" />
+						<t:template>
+										<m:ObjectNumber
+											number="{products>Status}"
+											state="{products>state}"/>
+						</t:template>
+					</t:Column>
+					<t:Column
+						width="11rem"
+						filterProperty="Category"
+						defaultFilterOperator="StartsWith">
+						<m:Label text="Asset ID" />
+						<t:template>
+							<m:Text text="{products>AssetID}" wrapping="false" />
+						</t:template>
+					</t:Column>
+				
+									<t:Column
+						width="11rem"
+						filterProperty="Location"
+						defaultFilterOperator="StartsWith">
+						<m:Label text="Location" />
+						<t:template>
+							<m:Text text="{products>Location}" wrapping="false" />
+						</t:template>
+					</t:Column>
+
+				
+					<t:Column
+						width="20rem"
+						filterProperty="Location"
+						defaultFilterOperator="StartsWith">
+						<m:Label text="Description" />
+						<t:template>
+							<m:Text text="{products>Description}" wrapping="true" />
+						</t:template>
+					</t:Column>
+
+</t:columns>
+
+			</t:Table>	
+
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+
+
+	<ObjectPageSubSection
+						>
+							
+						<blocks>
+						<ObjectPageLazyLoader>
+						
+		</ObjectPageLazyLoader>
+			</blocks>
+
+							
+			
+					</ObjectPageSubSection>
+
+
+
+
+
+				</ObjectPageSection>
+
+			</sections>
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

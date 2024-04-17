@@ -1,0 +1,35 @@
+{
+	"CategoryCollection": [
+		{
+			"CategoryId": "1001010",
+			"CategoryDesc": "Computer Systems",
+			"Region": "USA"		
+		},
+		{
+			"CategoryId": "1001012",
+			"CategoryDesc": "Office Supplier",
+			"Region": "EMEA"		
+		},
+		{
+			"CategoryId": "232322",
+			"CategoryDesc": "Consulting Services",
+			"Region": "USA"		
+		},
+		{
+			"CategoryId": "4222111",
+			"CategoryDesc": "Finished Goods",
+			"Region": "USA"		
+		},
+		{
+			"CategoryId": "522211",
+			"CategoryDesc": "Building Constructions",
+			"Region": "USA"		
+		},
+		{
+			"CategoryId": "877343",
+			"CategoryDesc": "Travel",
+			"Region": "USA"		
+		}
+		
+	]
+}

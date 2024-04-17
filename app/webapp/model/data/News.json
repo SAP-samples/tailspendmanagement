@@ -1,0 +1,37 @@
+{
+	"News": [
+		{
+			"content": " Know about intelligent recommendations for event content in Guided Sourcing.",
+			"subheader": "Intelligent Recommendations - Machine Learning",
+			"date": "2022-12-07T09:42:32.910Z",
+			"image": "images/intelligentrecommendation.jpg",
+			"link": "https://www.youtube.com/watch?v=1cgtYJIrJRI",
+			"id": "one"
+		
+		},
+		{
+			"content": "Full projects is now supported in the new Guided Sourcing UX feature.",
+			"subheader": "Full Sourcing Projects",
+			"date": "2022-12-07T09:42:32.910Z",
+			"image": "images/GBSourcingFullProject.jpg",
+			"link": "https://www.youtube.com/watch?v=gn9QD0ibI30",
+			"id": "2"
+		},
+		{
+			"content": "Guided Sourcing features and functionality",
+			"subheader": "Simple Soluton to Complex Sourcing",
+			"date": "2022-12-07T09:42:32.910Z",
+			"image": "images/simpl_sol_sourcing.jpg",
+			"link": "https://blogs.sap.com/2022/07/13/guided-sourcing-a-simple-solution-for-complex-sourcing/",
+			"id": "3"
+		},
+		{
+			"content": "Get introduced to Event Day Management and highlight functionality within the Sourcing solution",
+			"subheader": "SAP Sourcing Event Day Management",
+			"date": "2022-12-07T09:42:32.910Z",
+			"image": "images/SourcingEventDay.jpg",
+			"link": "https://www.youtube.com/watch?v=KQ_DC_81TMY",
+			"id": "4"
+		}
+	]
+}

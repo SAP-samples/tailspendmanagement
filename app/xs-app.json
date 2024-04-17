@@ -1,0 +1,22 @@
+{
+  "welcomeFile": "/AutoRFQApp/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/backend/(.*)",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "destination": "backend",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/AutoRFQApp/(.*)$",
+      "target": "$1",
+      "localDir": "webapp",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

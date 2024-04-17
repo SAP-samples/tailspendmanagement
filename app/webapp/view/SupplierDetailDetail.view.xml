@@ -1,0 +1,93 @@
+<mvc:View displayBlock="true" controllerName="com.sap.tailspend.controller.SupplierDetailDetail" height="100%"
+		xmlns="sap.uxap"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:m="sap.m"
+		xmlns:core="sap.ui.core"
+		xmlns:f="sap.f"
+		xmlns:form="sap.ui.layout.form">
+
+	   <ObjectPageLayout id="ObjectPageLayout"
+					 showTitleInHeaderContent="true"
+					alwaysShowContentHeader="false"
+					preserveHeaderStateOnScroll="false"
+					headerContentPinnable="true"
+					isChildPage="true"
+					upperCaseAnchorBar="false">
+				<headerTitle>
+					<ObjectPageDynamicHeaderTitle>
+						<expandedHeading>
+							<m:Title text="Suppliers by selected Category" wrapping="true"/>
+						</expandedHeading>
+
+				<actions>
+				<m:Button
+						id="saveevent"
+						text="Save"
+						type="Emphasized"
+						press="OnPressSave"
+						enabled="true"/>
+
+				</actions>
+				</ObjectPageDynamicHeaderTitle>
+				</headerTitle>
+			 <headerContent>
+			</headerContent>
+
+	<sections>
+			<ObjectPageSection title="General Information">
+				<subSections>
+					<ObjectPageSubSection>
+						<blocks>
+							<form:SimpleForm
+							    id="suplierdetaildetail"
+								maxContainerCols="2"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanL="12"
+								labelSpanM="12"
+								emptySpanL="0"
+								emptySpanM="0"
+								columnsL="1"
+								columnsM="1">
+								<form:content>
+									<m:Label text="Preferred Supplier for Tail Spend Events" />
+									<m:CheckBox id='TXAutoRFP'/>
+									<m:Label text="Qualification Status"/>
+									<m:Text id="QualificationStatus" text="{SupplierDetailDetailMo>/QualificationStatus}"/>
+									<m:Label text="Category"/>
+									<m:Text id="Category" text="{SupplierDetailDetailMo>/Category}"/>
+									<m:Label text="Region"/>
+									<m:Text id="Region" text="{SupplierDetailDetailMo>/Region}"/>
+									<m:Label text="ERP Supplier ID"/>
+									<m:Text id="ERPVendorId" text="{SupplierDetailDetailMo>/SLPSupplier/ERPVendorId}"/>
+									<m:Label text="Supplier Name"/>
+									<m:Text id="SupplierName" text="{SupplierDetailDetailMo>/SLPSupplier/SupplierName}"/>
+									<m:Label text="SLP Vendor ID"/>
+									<m:Text id="SMVendorId" text="{SupplierDetailDetailMo>/SLPSupplier_SMVendorId}"/>
+									<m:Label text="ACM Vendor ID"/>
+									<m:Text id="ACMVendorId" text="{SupplierDetailDetailMo>/SLPSupplier/ACMId}"/>
+									<m:Label text="City"/>
+									<m:Text id="AddressCity" text="{SupplierDetailDetailMo>/SLPSupplier/AddressCity}"/>
+									<m:Label text="Country Code"/>
+									<m:Text id="AddressCountryCode" text="{SupplierDetailDetailMo>/SLPSupplier/AddressCountryCode}"/>
+									<m:Label text="Primary Contact First Name"/>
+									<m:Text id="PrimaryContactFirstName" text="{SupplierDetailDetailMo>/SLPSupplier/PrimaryContactFirstName}"/>
+									<m:Label text="Primary Contact Last Name"/>
+									<m:Text id="PrimaryContactLastName" value="{SupplierDetailDetailMo>/SLPSupplier/PrimaryContactLastName}" />
+									<m:Label text="Contact Email Address" />
+									<m:Text id="PrimaryContactEMail" text="{SupplierDetailDetailMo>/SLPSupplier/PrimaryContactEMail}"/>
+									<!-- <m:Label text="" />
+									<m:Button id="saveevent" text="Save" press="OnPressSave" type="Emphasized" width="20%" />	 -->
+								</form:content>
+							</form:SimpleForm>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			
+		</sections> 	
+			
+
+	</ObjectPageLayout>
+
+</mvc:View>

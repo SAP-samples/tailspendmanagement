@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog
+		id="selectDialog"
+		title="Products"
+		items="{products>/ProductCollection}"
+		search=".onValueHelpSearch"
+		confirm=".onValueHelpClose"
+		cancel=".onValueHelpClose">
+		<StandardListItem
+			icon="{products>ProductPicUrl}"
+			iconDensityAware="false"
+			iconInset="false"
+			title="{products>TaxTarifCode}"
+			description="{products>ProductId} {products>Name}" />
+	</SelectDialog>
+</core:FragmentDefinition>

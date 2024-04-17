@@ -1,0 +1,142 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.suite.ui.commons"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	controllerName="com.sap.tailspend.controller.Statistics"
+	xmlns:mc="sap.suite.ui.microchart">
+	<m:Page title="Tail Spend - Analytics Chart"
+		showNavButton="true"
+		navButtonPress="onNavButtonPressed"
+		backgroundDesign="Solid">
+		<m:content>
+			<m:ObjectHeader
+				responsive="true"
+				title="{
+					parts: [
+						'i18n>processFlowChartsTitle',
+						'business>/year'
+					],
+					formatter: 'jQuery.sap.formatMessage'
+				}">
+				<m:headerContainer>
+					<m:HeaderContainer
+						scrollStep="200"
+						scrollTime="500"
+						showDividers="true"
+						class="sapUiSmallMargin">
+						<m:FlexBox
+							width="12rem"
+							height="9rem"
+							alignItems="Center"
+							justifyContent="Center"
+							direction="Column"
+							renderType="Bare">
+							<m:Title
+								text="{i18n>processFlowChartsShareOwnProduction}"
+								class="sapUiSmallMargin" />
+							<m:FlexBox width="5rem" height="5rem" renderType="Bare">
+								<mc:RadialMicroChart percentage="{business>/shareOwnProduction}" />
+							</m:FlexBox>
+						</m:FlexBox>
+						<m:FlexBox
+							width="16rem"
+							height="9rem"
+							alignItems="Center"
+							justifyContent="Center"
+							direction="Column"
+							renderType="Bare">
+							<m:Title
+								text="{
+									parts: [
+										'i18n>processFlowChartsDeliveryTimeComparison',
+										'suppliers>/timeMeasure'
+									],
+									formatter: 'jQuery.sap.formatMessage'
+								}"
+								class="sapUiSmallMargin" />
+							<m:FlexBox width="16rem" height="5rem" renderType="Bare">
+								<mc:ComparisonMicroChart
+									isResponsive="true"
+									press="press"
+									data="{suppliers>/Suppliers}">
+									<mc:data>
+										<mc:ComparisonMicroChartData
+											title="{suppliers>id}"
+											value="{suppliers>deliveryTime}"
+											displayValue="{suppliers>deliveryTime}"
+											color="{suppliers>deliveryTimeSemantics}" />
+									</mc:data>
+								</mc:ComparisonMicroChart>
+							</m:FlexBox>
+						</m:FlexBox>
+						
+						<m:FlexBox
+							width="12rem"
+							height="9rem"
+							alignItems="Center"
+							justifyContent="Center"
+							direction="Column"
+							renderType="Bare">
+							<m:Title
+								text="{
+									parts: [
+										'i18n>processFlowChartsFillLevel',
+										'business>/fillLevel/measure'
+									],
+									formatter: 'jQuery.sap.formatMessage'
+								}"
+								class="sapUiSmallMargin" />
+							<m:FlexBox width="12rem" height="5rem" renderType="Bare">
+								<mc:LineMicroChart
+									size="Responsive"
+									threshold="{business>/fillLevel/threshold}"
+									leftTopLabel="{business>/fillLevel/valueBegin}"
+									leftBottomLabel="{business>/fillLevel/timeBegin}"
+									rightTopLabel="{business>/fillLevel/valueEnd}"
+									rightBottomLabel="{business>/fillLevel/timeEnd}"
+									color="{business>/fillLevel/color}"
+									showPoints="true"
+									points="{
+										path: 'business>/fillLevel/timeSeries',
+										templateShareable: true
+									}">
+									<mc:LineMicroChartPoint
+										x="{business>time}"
+										y="{business>level}" />
+								</mc:LineMicroChart>
+							</m:FlexBox>
+						</m:FlexBox>
+					</m:HeaderContainer>
+				</m:headerContainer>
+			</m:ObjectHeader>
+
+			<m:Panel headerText="{i18n>processFlowProcessTitle}">
+				<l:Grid defaultSpan="L12 M12 S12" class="sapUiResponsiveMargin" vSpacing="0" hSpacing="0">
+				<ChartContainer
+					title="{
+						parts: [
+							'i18n>chartContainerBulletChartTitle',
+							'business>/temperatureUnit'
+						],
+						formatter: 'jQuery.sap.formatMessage'
+					}">
+				
+				<ChartContainerContent
+							icon="sap-icon://vertical-bullet-chart"
+							title="{i18n>chartContainerBulletChartContentTitle}">
+					<content>
+						<core:Fragment
+							fragmentName="com.sap.tailspend.fragment.VizChart"
+							type="JS" />
+					</content>
+				</ChartContainerContent>
+
+				</ChartContainer>
+				</l:Grid>
+			</m:Panel>
+
+		</m:content>
+	</m:Page>
+</mvc:View>

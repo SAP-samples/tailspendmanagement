@@ -1,0 +1,32 @@
+{
+	"AssetNumberCollection": [
+		{
+			"key": "A1",
+			"text": "(A102042)Notebook Basic 15"
+		},
+		{
+			"key": "A2",
+			"text": "(A102044)Notebook Basic 18"
+		},
+		{
+			"key": "A3",
+			"text": "(A102047)Notebook Professional 17"
+		},
+		{
+			"key": "A4",
+			"text": "(A102049)32 GB Digital Assistant with high-resolution"
+		},
+		{
+			"key": "A5",
+			"text": "(A102232)iPhone 256 GB Smartphone"
+		},
+		{
+			"key": "A6",
+			"text": "(A123042)Samsung Galaxy 128 GB Smartphone"
+		},
+		{
+			"key": "A7",
+			"text": "(A128143)Dell 10.5-inch Multitouch HD Screen"
+		}
+	]
+}

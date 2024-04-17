@@ -1,0 +1,20 @@
+{
+	"LocationCollection": [
+		{
+			"key": "L1",
+			"text": "Dallas"
+		},
+		{
+			"key": "L2",
+			"text": "San Francisco"
+		},
+		{
+			"key": "L3",
+			"text": "Atlanta"
+		},
+		{
+			"key": "L4",
+			"text": "Boston"
+		}
+	]
+}

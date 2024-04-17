@@ -1,0 +1,33 @@
+{
+	"EventRules": [
+		{
+			"ID": "G001",
+			"Description": "Auto Publish Event from ERP Demand"			
+		},
+		{
+			"ID": "G002",
+			"Description": "Auto Award Event upon receiving Supplier Bids"
+		},
+		{
+			"ID": "G003",
+			"Description": "Create an Event per Requisition"			
+		},
+		{
+			"ID": "18",
+			"Description": "Enable preview period before bidding opens"			
+		},
+		{
+			"ID": "19",
+			"Description": "Can participants place bids during preview period"			
+		},
+		{
+			"ID": "98",
+			"Description": "Require participant to give a reason for declining to bid"			
+		},
+		{
+			"ID": "126",
+			"Description": "Allow participants to submit bids by email"			
+		}
+
+	]
+}

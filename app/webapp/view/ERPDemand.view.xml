@@ -1,0 +1,147 @@
+<mvc:View displayBlock="true" controllerName="com.sap.tailspend.controller.ERPDemand"
+        xmlns="sap.ui.table"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:unified="sap.ui.unified"
+		xmlns:core="sap.ui.core"
+		xmlns:commons="sap.suite.ui.commons"
+		xmlns:tnt="sap.tnt"
+		xmlns:form="sap.ui.layout.form"
+		xmlns:m="sap.m"
+		height="100%">
+
+	<m:Page
+			showHeader="false"
+			enableScrolling="false"
+			class="sapUiContentPadding">
+		
+			<Table
+					id="eventstable"
+					rows="{TailSpendModel>/results}"
+					selectionMode="None"
+					visibleRowCount="10"
+					rowActionCount="1"
+					>
+				<extension>
+					<m:OverflowToolbar>
+						<m:Title id="title" text="ERP Demand"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column width="150px">
+						<m:Label text="PR ID"/>
+						<template>
+							<m:Text text="{TailSpendModel>PRID}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="100px">
+						<m:Label text="PR Item"/>
+						<template>
+							<m:Text text="{TailSpendModel>PRITEM}" wrapping="false"/>
+						</template>
+					</Column>
+
+					<Column width="150px">
+						<m:Label text="Source Of Demand"/>
+						<template>
+							<m:Text text="{TailSpendModel>BusinessSystem}" wrapping="true"/>
+						</template>
+					</Column>
+
+					<Column width="250px">
+						<m:Label text="PR Title"/>
+						<template>
+							<m:Text text="{TailSpendModel>PRTitle}" wrapping="true"/>
+						</template>
+					</Column>
+					<Column width="250px">
+						<m:Label text="Item Description"/>
+						<template>
+							<m:Text text="{TailSpendModel>ItemDesc}" wrapping="true"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="Created Date"/>
+						<template>
+							<m:Text text="{TailSpendModel>CreatedDate}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="150px">
+						<m:Label text="Category ID"/>
+						<template>
+							<m:Text text="{TailSpendModel>CategoryID}" wrapping="false"/>
+						</template>
+					</Column>
+					
+					<Column width="150px">
+						<m:Label text="Quantity" width="100px"/>
+						<template>
+							<m:Text text="{TailSpendModel>Quantity}" wrapping="false"/>
+						</template>
+					</Column>
+					<Column width="100px">
+						<m:Label text="UOM"/>
+						<template>
+							<m:Text text="{TailSpendModel>UOM}" wrapping="false"/>
+						</template>
+					</Column>
+					<!-- <Column width="300px">
+						<m:Label text="Status"/>
+						<template>
+							<tnt:InfoLabel id="il9" text="{TailSpendModel>Status}" colorScheme="9"/>
+						</template>
+					</Column> -->
+				</columns>
+
+				<rowActionTemplate>
+					<RowAction>
+					<items>
+						<RowActionItem type="Navigation" press="onDetailsPress" icon="sap-icon://feeder-arrow"></RowActionItem>
+					</items>
+					</RowAction>
+				</rowActionTemplate>
+
+			</Table>
+
+		<m:VBox class="sapUiSmallMargin">
+
+		<m:Panel id="processform" visible="false">
+		<m:headerToolbar>
+		<m:OverflowToolbar active="true" press="onOverflowToolbarPress">
+			<m:ToolbarSpacer />
+			<m:Button icon="sap-icon://decline" press="onClose" />
+		</m:OverflowToolbar>
+		</m:headerToolbar>
+		<m:Label text="ERP Requisition - Process Flow" />
+		<commons:ProcessFlow
+			id="processflow"
+			scrollable="false"
+			nodePress="onNodePress"
+			nodes="{ProcessFlow>/nodes}"
+			lanes="{ProcessFlow>/lanes}">
+			<commons:nodes>
+				<commons:ProcessFlowNode
+					laneId="{ProcessFlow>lane}"
+					nodeId="{ProcessFlow>id}"
+					title="{ProcessFlow>title}"
+					titleAbbreviation="{ProcessFlow>titleAbbreviation}"
+					children="{ProcessFlow>children}"
+					state="{ProcessFlow>state}"
+					stateText="{ProcessFlow>stateText}"
+					texts="{ProcessFlow>texts}"
+					focused="{ProcessFlow>focused}" />
+			</commons:nodes>
+			<commons:lanes>
+				<commons:ProcessFlowLaneHeader
+					laneId="{ProcessFlow>id}"
+					iconSrc="{ProcessFlow>icon}"
+					text="{ProcessFlow>label}"
+					position="{ProcessFlow>position}" />
+			</commons:lanes>
+		</commons:ProcessFlow>
+	</m:Panel>
+
+	</m:VBox>
+
+	</m:Page>
+
+</mvc:View>
