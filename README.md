@@ -1,4 +1,4 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/btp-tailspend-mgmt)](https://api.reuse.software/info/github.com/SAP-samples/btp-tailspend-mgmt)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/tailspendmanagement)](https://api.reuse.software/info/github.com/SAP-samples/tailspendmanagement)
 
 # Welcome to TailSpend Management
 Welcome to the sample use case of the Tailspend Management application. This open source application developed using the Cloud Application Programming Model (CAP) will help as reference for customers developing applications internally as a possible alternative to current quote automation process using SAP Ariba to manage tailspend. Tail Spend is often overlooked or not managed efficiently, as it tends to be more difficult to control and less visible than core procurement activities. 
