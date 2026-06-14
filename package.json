@@ -8,7 +8,7 @@
   "dependencies": {
     "@cap-js/postgres": "^1.1.0",
     "@sap-cloud-sdk/core": "^1.54.2",
-    "@sap/approuter": "^12.0.0",
+    "@sap/approuter": "^21.2.0",
     "@sap/audit-logging": "^3.2.0",
     "@sap/cds": "7.1.2",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.19",
@@ -19,10 +19,10 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@sap/cds-dk": "7.1.1"
+    "@sap/cds-dk": "^7.5"
   },
   "engines": {
-    "node": "^18"
+     "node": "^20"
   },
   "scripts": {
     "start": "cds-serve",
